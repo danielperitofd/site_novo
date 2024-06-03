@@ -1,0 +1,36 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Cabeçalho da página */
+header {
+    background-color: #7de982;
+}
+/* Barra de navegação horizontal */
+nav {
+    background-color: #288cff;
+}
+
+/* Banner carrocel de exibição de conteúdo */
+section {
+    background-color: #684675;
+}
+
+/* Artigos diversos */
+article {
+    background-color: #f1fa78;
+}
+
+/* Rodapé da página */
+footer {
+    background-color: #56ce6a;
+}
+
+
+.grid-wrapper {
+    min-height: 100px;
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
