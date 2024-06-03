@@ -1,19 +1,56 @@
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.grid-wrapper {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: 240px (3, ifr);
+    gap: 2px;
+}
+
+.grid-wrapper>* {
+    min-height: 98px;
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-wrapper>main {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    min-height: 100px;
+    border-radius: 4px;
+    background-color: #ccc;
+}
+
 /* Cabeçalho da página */
 header {
     background-color: #7de982;
+    grid-column: 1 / -1;
+    grid-row: 1;
 }
+
+
 /* Barra de navegação horizontal */
 nav {
     background-color: #288cff;
+    grid-row: 2 / -2;
 }
+
+
 
 /* Banner carrocel de exibição de conteúdo */
 section {
     background-color: #684675;
+    grid-column: 2 / -1;
+    border-radius: 2px;
 }
+
 
 /* Artigos diversos */
 article {
@@ -23,14 +60,7 @@ article {
 /* Rodapé da página */
 footer {
     background-color: #56ce6a;
+    grid-column: 1 / -1;
+    grid-row: -2 / -1;
 }
 
-
-.grid-wrapper {
-    min-height: 100px;
-    border-radius: 4px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
